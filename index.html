@@ -11,9 +11,19 @@
 			<p class="gj">搞基！！！！！！</p>
 		</div>
 		<img src="./jj.gif" />
-		<audio controls="controls" autoplay="autoplay" loop="loop" style="display: none;">
+		<audio controls="controls" class="yy1" loop="loop" preload style="display: none;">
 		  <source src="./tgzc.ogg" type="audio/ogg" />
 		  <source src="./tgzc.mp3" type="audio/mpeg" />
+		  Your browser does not support the audio element.
+		</audio>
+		<audio controls="controls" class="yy2" loop="loop" preload style="display: none;">
+		  <source src="./xjzw.ogg" type="audio/ogg" />
+		  <source src="./xjzw.mp3" type="audio/mpeg" />
+		  Your browser does not support the audio element.
+		</audio>
+		<audio controls="controls" class="yy3" loop="loop" preload style="display: none;">
+		  <source src="./mskjwdws.ogg" type="audio/ogg" />
+		  <source src="./mskjwdws.mp3" type="audio/mpeg" />
 		  Your browser does not support the audio element.
 		</audio>
 	</body>
@@ -21,40 +31,75 @@
 		var a=Math.ceil(Math.random()*10);
 		console.log(a)
 		var gj=document.querySelector('.gj')
-		console.log(gj.innerHTML)
+		var yy1=document.querySelector('.yy1')
+		var yy2=document.querySelector('.yy2')
+		var yy3=document.querySelector('.yy3')
 		switch(a){
 			case 0:
 			  gj.innerHTML="0000000000";
+			  yy1.play();
+			  yy2.pause();
+			  yy3.pause();
 			  break;
 			case 1:
 			  gj.innerHTML="1111111111111";
+			  yy1.play();
+			  yy2.pause();
+			  yy3.pause();
 			  break;
 			case 2:
 			  gj.innerHTML="22222222222";
+			  yy1.play();
+			  yy2.pause();
+			  yy3.pause();
 			  break;
 			case 3:
 			  gj.innerHTML="33333333333";
+			  yy1.play();
+			  yy2.pause();
+			  yy3.pause();
 			  break;
 			case 4:
 			  gj.innerHTML="44444444444";
+			  yy2.play();
+			  yy1.pause();
+			  yy3.pause();
 			  break;
 			case 5:
 			  gj.innerHTML="555555555555";
+			  yy2.play();
+			  yy1.pause();
+			  yy3.pause();
 			  break;
 			case 6:
 			  gj.innerHTML="666666666666";
+			  yy2.play();
+			  yy1.pause();
+			  yy3.pause();
 			  break;
 			case 7:
 			  gj.innerHTML="7777777777777";
+			  yy2.play();
+			  yy1.pause();
+			  yy3.pause();
 			  break;
 			case 8:
 			  gj.innerHTML="888888888888";
+			  yy3.play();
+			  yy2.pause();
+			  yy1.pause();
 			  break;
 			case 9:
 			  gj.innerHTML="99999999999";
+			  yy3.play();
+			  yy2.pause();
+			  yy1.pause();
 			  break;
 			case 10:
 			  gj.innerHTML="101010101010";
+			  yy3.play();
+			  yy2.pause();
+			  yy1.pause();
 			  break;
 			default:
 			  gj.innerHTML="搞基搞基 ~";
