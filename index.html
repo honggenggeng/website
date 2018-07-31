@@ -8,7 +8,7 @@
 		<div>
 			<p>老爽</p>
 			<p>二凡</p>
-			<p>搞基！！！！！！</p>
+			<p class="gj">搞基！！！！！！</p>
 		</div>
 		<img src="./jj.gif" />
 		<audio controls="controls" autoplay="autoplay" loop="loop" style="display: none;">
@@ -17,4 +17,47 @@
 		  Your browser does not support the audio element.
 		</audio>
 	</body>
+	<script type="text/javascript">
+		var a=Math.ceil(Math.random()*10);
+		console.log(a)
+		var gj=document.querySelector('.gj')
+		console.log(gj.innerHTML)
+		switch(a){
+			case 0:
+			  gj.innerHTML="0000000000";
+			  break;
+			case 1:
+			  gj.innerHTML="1111111111111";
+			  break;
+			case 2:
+			  gj.innerHTML="22222222222";
+			  break;
+			case 3:
+			  gj.innerHTML="33333333333";
+			  break;
+			case 4:
+			  gj.innerHTML="44444444444";
+			  break;
+			case 5:
+			  gj.innerHTML="555555555555";
+			  break;
+			case 6:
+			  gj.innerHTML="666666666666";
+			  break;
+			case 7:
+			  gj.innerHTML="7777777777777";
+			  break;
+			case 8:
+			  gj.innerHTML="888888888888";
+			  break;
+			case 9:
+			  gj.innerHTML="99999999999";
+			  break;
+			case 10:
+			  gj.innerHTML="101010101010";
+			  break;
+			default:
+			  gj.innerHTML="搞基搞基 ~";
+		}
+	</script>
 </html>
